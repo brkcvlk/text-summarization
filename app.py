@@ -38,5 +38,9 @@ def metrics():
 def read_root():
     return {"message": "check /metrics for Prometheus metrics and check /docs for API usage"}
 
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
+
 if __name__ == "__main__":
     uvicorn.run(app, port=8000)

@@ -30,7 +30,7 @@ env/
 *.sqlite
 *.db
 instance/
-*.env   # eğer ortam değişkenlerini burada tutuyorsan
+*.env
 *.pem
 *.key
 *.crt
@@ -81,8 +81,8 @@ grafana-data/
 # -----------------------------
 # LangChain / LLM
 # -----------------------------
-*.json  # embeddings, cache dosyaları
-*.pkl   # modellerin cache’leri
+*.json 
+*.pkl 
 
 # -----------------------------
 # Misc / OS
