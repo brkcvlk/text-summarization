@@ -1,0 +1,94 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyt
+*.pdb
+*.pkl
+*.log
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+
+# -----------------------------
+# FastAPI / Web
+# -----------------------------
+*.sqlite
+*.db
+instance/
+*.env   # eğer ortam değişkenlerini burada tutuyorsan
+*.pem
+*.key
+*.crt
+
+# -----------------------------
+# MLflow
+# -----------------------------
+mlruns/
+*.mlmodel
+mlflow/tmp/
+mlflow/.trash/
+
+# -----------------------------
+# Docker
+# -----------------------------
+# Images, containers, volumes
+*.dockerignore
+docker-compose.override.yml
+*.tar
+*.img
+*.log
+
+# -----------------------------
+# Pytest
+# -----------------------------
+.cache/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+htmlcov/
+*.cover
+*.coverage
+
+# -----------------------------
+# CI/CD / Github Actions
+# -----------------------------
+# workflow logs
+*.log
+.github/workflows/*.log
+
+# -----------------------------
+# Prometheus / Grafana
+# -----------------------------
+prometheus-data/
+grafana-data/
+*.db
+
+# -----------------------------
+# LangChain / LLM
+# -----------------------------
+*.json  # embeddings, cache dosyaları
+*.pkl   # modellerin cache’leri
+
+# -----------------------------
+# Misc / OS
+# -----------------------------
+.DS_Store
+Thumbs.db
+*.bak
+*.tmp
+*.swp
