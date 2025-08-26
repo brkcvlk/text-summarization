@@ -47,7 +47,6 @@ mlflow/.trash/
 # Docker
 # -----------------------------
 # Images, containers, volumes
-*.dockerignore
 docker-compose.override.yml
 *.tar
 *.img

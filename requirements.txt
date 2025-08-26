@@ -9,3 +9,4 @@ torch
 hf_xet
 python-multipart
 prometheus_client
+pytest
