@@ -5,8 +5,8 @@ langchain
 langchain_core
 langchain_huggingface
 mlflow
-torch
 hf_xet
 python-multipart
 prometheus_client
 pytest
+# torch
