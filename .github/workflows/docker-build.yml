@@ -1,0 +1,27 @@
+name: Docker Build
+
+
+on:
+  workflow_run:
+    workflows: ["Test"]
+    types:
+      - completed
+
+
+jobs:
+  build:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+
+        - name: Checkout repository
+          uses: actions/checkout@v2
+
+        - name: Log in to Docker Hub
+          run: echo "${{ secrets.DOCKER_TOKEN }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+        - name: Build Docker image
+          run: docker build -t burakcvlk/text-summarization:latest .
+
+        - name: Push Docker image
+          run: docker push burakcvlk/text-summarization:latest
